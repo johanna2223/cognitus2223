@@ -1,36 +1,73 @@
+body{
+    padding: o;
+    margin: 0;
+    background: lightgray;
+}
+
+#generalContainer {
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+
+    grid-template:
+    "nav aside header" 5rem
+    "nav aside main" auto
+    "nav aside footer" 4rem /
+    8rem 12rem auto;
+}
+
+
 header {
+    grid-area: header;
     display: flex;  
-    justify-content: center; 
-    border: 1rem solid rgb(5, 1, 58); 
+    justify-content: right; 
+    border: 1rem solid rgb(5, 1, 58);
+    background: white;
+}
+
+header img{
+    height: 3rem; 
+    width: 3rem;
+    border-radius: 50%;
 }
 
 #pecesimage {
     border: 1rem; 
 } 
+
 nav {
-    border: 1rem solid rgb(15, 125, 199);    
+    grid-area: nav;
+    border: 1rem solid rgb(15, 125, 199);
+    background: white;   
 }
-.cocaloca {
-    border: 1rem solid rgb(11, 13, 14);    
+
+.cocacola {
+    /* border: 1rem solid rgb(11, 13, 14); */
 }
+
 .altura {
-    height: 10rem;
+    /* height: 10rem; */
 } 
+
 .vinotinto {
     border: 1rem solid rgb(236, 176, 9);
     height: 1rem;    
 }
+
 aside {
-    border: 1rem solid rgb(41, 3, 41);    
+    grid-area: aside;
+    border: 1rem solid rgb(41, 3, 41);
+    background: white;
 }
+
 main {
-    border: 1rem solid rgb(231, 119, 152);    
+    grid-area: main;
+    border: 1rem solid rgb(231, 119, 152);
+    background: white; 
 }
+
 footer {
-    border: 1rem solid rgb(103, 172, 24);    
-}
-header img{
-    height: 5rem; 
-    width: 5rem;
-    border-radius: 50%;
+    grid-area: footer;
+    border: 1rem solid rgb(103, 172, 24);
+    background: white;  
 }
