@@ -1,8 +1,9 @@
 body{
     padding: o;
     margin: 0;
-    background: lightgray;
+    background: rgb(165, 167, 167);
 }
+
 
 #generalContainer {
     height: 100vh;
@@ -21,8 +22,8 @@ header {
     grid-area: header;
     display: flex;  
     justify-content: right; 
-    border: 1rem solid rgb(5, 1, 58);
-    background: white;
+    border: 1rem solid rgb(104, 142, 125);
+    background: rgb(246, 243, 243);
 }
 
 header img{
@@ -37,7 +38,7 @@ header img{
 
 nav {
     grid-area: nav;
-    border: 1rem solid rgb(15, 125, 199);
+    border: 0.5rem solid rgb(117, 168, 171);
     background: white;   
 }
 
@@ -56,18 +57,18 @@ nav {
 
 aside {
     grid-area: aside;
-    border: 1rem solid rgb(41, 3, 41);
+    border: 0.5rem solid rgb(63, 70, 76);
     background: white;
 }
 
 main {
     grid-area: main;
-    border: 1rem solid rgb(231, 119, 152);
+    border: 0.5rem solid rgb(71, 104, 102);
     background: white; 
 }
 
 footer {
     grid-area: footer;
-    border: 1rem solid rgb(103, 172, 24);
+    border: 0.5rem solid rgb(33, 49, 54);
     background: white;  
 }
